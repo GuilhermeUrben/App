@@ -3,6 +3,8 @@ import java.net.http.HttpClient;
 import java.net.http.HttpRequest;
 import java.net.http.HttpResponse;
 import java.net.http.HttpResponse.BodyHandlers;
+import java.util.List;
+import java.util.Map;
 
 public class App {
     public static void main(String[] args) throws Exception {
@@ -17,9 +19,10 @@ public class App {
         String body = response.body();
         System.out.println(body);
 
-
-
         //Extrair só os dados que interessam (título, poster, classificação)
+        // List<Map<String, String>> listaDeFilmes = body;
+        System.out.println("oi");
+
 
         // exivir e manipular os dados
     }
